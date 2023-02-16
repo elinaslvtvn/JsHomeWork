@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея котов</title>
+    <script src="index.js"></script>
+    <!-- подключаем css  -->
+    <link rel="stylesheet" href="index.css">
+    <!-- подключаем шрифты -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="container_gallery">
+        <h2 class="header">Галерея котов</h2>
+
+        <img class="gallery" src="assets/img/1.jpg" id="img1">
+        <div>
+            <button onclick="showPreviousImage()">Previous</button>
+            <button onclick="showNextImage()">Next</button>
+        </div>
+
+    </div>
+    <h2 class="header">Задание со звездочкой</h2>
+    <div class="container_calculate">
+        <p>
+            Введите год в поле, чтобы определить, является ли данный год високосным в григорианском календаре.
+        </p>
+        <div><input type="number" id="yearNumber"> </label>
+            <button onclick="yearCalculate()">Рассчитать</button> </div>
+
+
+        <label>Ответ:
+            <input type="text" id="result"> </label>
+        </form>
+    </div>
+</body>
+
+</html>
